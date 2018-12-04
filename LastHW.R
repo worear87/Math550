@@ -37,3 +37,5 @@ plot(1:7,rs$adjr2,xlab="Subset Size",ylab="Adjusted R-squared")
 
 subsets(regsubsets.out,statistic=c("adjr2"))
 rs$adjr2
+
+
