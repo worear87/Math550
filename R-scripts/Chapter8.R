@@ -48,7 +48,7 @@ plot(Food,stanresPearson,ylab="Standardized Pearson Residuals",xlab="Food Rating
 detach(MichelinFood)
 
 
-MichelinNY <- read.csv("MichelinNY.csv", header=TRUE)
+MichelinNY <- read.csv("Data/MichelinNY.csv", header=TRUE)
 attach(MichelinNY)
 
 y <- InMichelin
@@ -107,7 +107,7 @@ lines(xx,predict(loessfit2,data.frame(Food=xx)))
 
 #Figure 8.10 on page 288
 library(alr3)
-mmps(m2,layout=c(2,3),key=NULL)
+mmps(m2,layout=c(2,3))
 
 #Figure 8.11 on page 289
 par(mfrow=c(1,1))
